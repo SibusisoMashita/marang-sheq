@@ -1,1 +1,534 @@
+/* Base setup & colour variables */
+:root {
+  --ms-yellow: #FDBC31;
+  --ms-orange: #E15A1F;
+  --ms-red: #A02D23;
 
+  --ms-text-dark: #333333;
+  --ms-soft-bg: #fdf7f1;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ms-text-dark);
+}
+
+/* Thin top border (matches original red strip) */
+.top-border {
+  height: 4px;
+  background-color: var(--ms-red);
+}
+
+/* Header / navbar */
+.site-header {
+  background-color: #ffffff;
+}
+
+/* Custom navbar to mimic existing colour scheme */
+.custom-navbar {
+  background-color: #ffffff;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-img {
+  max-height: 70px;
+  width: auto;
+}
+
+.navbar-toggler {
+  border-color: var(--ms-orange);
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--ms-orange);
+}
+
+.navbar-toggler-icon::before {
+  top: 8px;
+}
+
+.navbar-toggler-icon::after {
+  bottom: 8px;
+}
+
+/* Main nav links styled as blocks */
+.main-nav .nav-link {
+  position: relative;
+  padding: 0.75rem 2.5rem;
+  color: #ffffff;
+  background-color: var(--ms-orange);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.main-nav .nav-item:first-child .nav-link {
+  border-left: none;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus {
+  background-color: #f07a3a;
+  color: #ffffff;
+}
+
+.main-nav .nav-link.active {
+  background-color: var(--ms-yellow);
+  color: #ffffff;
+}
+
+/* Stack nav links vertically on small screens */
+@media (max-width: 991.98px) {
+  .main-nav .nav-link {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .main-nav .nav-item:first-child .nav-link {
+    border-top: none;
+  }
+}
+
+/* Hero section */
+.hero {
+  padding: 4rem 0 3.5rem;
+  background: linear-gradient(
+      to right,
+      rgba(253, 188, 49, 0.12),
+      rgba(225, 90, 31, 0.12)
+    ),
+    #ffffff;
+}
+
+.hero-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ms-orange);
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  max-width: 38rem;
+  color: #555555;
+}
+
+/* Hero buttons using brand colours */
+.btn-hero-primary {
+  background-color: var(--ms-orange);
+  border-color: var(--ms-orange);
+  color: #ffffff;
+  padding: 0.7rem 1.8rem;
+  font-weight: 500;
+}
+
+.btn-hero-primary:hover {
+  background-color: #c94d1c;
+  border-color: #c94d1c;
+  color: #ffffff;
+}
+
+.btn-hero-secondary {
+  background-color: var(--ms-yellow);
+  border-color: var(--ms-yellow);
+  color: #ffffff;
+  padding: 0.7rem 1.8rem;
+  font-weight: 500;
+}
+
+.btn-hero-secondary:hover {
+  background-color: #e0a72b;
+  border-color: #e0a72b;
+  color: #ffffff;
+}
+
+/* Hero contact card */
+.hero-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+}
+
+.hero-card-body {
+  padding: 1.75rem;
+}
+
+.hero-card a {
+  color: var(--ms-orange);
+  text-decoration: none;
+}
+
+.hero-card a:hover {
+  text-decoration: underline;
+}
+
+/* Content sections */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  max-width: 36rem;
+  margin: 0.5rem auto 0;
+  color: #666666;
+}
+
+.section-soft {
+  background-color: var(--ms-soft-bg);
+}
+
+/* Info boxes on home page */
+.info-box {
+  border-radius: 0.75rem;
+  border: 1px solid #f0e2d4;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.info-box h6 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Service teaser cards */
+.service-card {
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid #f0e2d4;
+}
+
+.service-card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--ms-orange);
+  font-weight: 500;
+}
+
+.service-link::after {
+  content: " →";
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+/* CTA strip */
+.cta-strip {
+  background: linear-gradient(
+    to right,
+    var(--ms-orange),
+    var(--ms-yellow)
+  );
+  color: #ffffff;
+}
+
+.cta-strip h3 {
+  font-weight: 600;
+}
+
+.cta-strip p {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.5rem 0;
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.site-footer a {
+  color: var(--ms-orange);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* General spacing tweaks on small screens */
+@media (max-width: 575.98px) {
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* ABOUT PAGE */
+
+/* Top hero on About page */
+.about-hero {
+  padding: 4rem 0 3rem;
+  background-color: #ffffff;
+}
+
+.page-tag {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ms-orange);
+}
+
+.page-title {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 600;
+}
+
+.lead-text {
+  font-size: 1rem;
+  color: #555555;
+}
+
+/* Main about image style */
+.about-photo {
+  border-radius: 0.9rem;
+  object-fit: cover;
+}
+
+/* Side highlight card */
+.about-side-card {
+  border-radius: 0.9rem;
+  border: 1px solid #f0e2d4;
+  padding: 1.5rem;
+  background-color: #fffdf9;
+}
+
+/* Mission / vision panels */
+.about-panel {
+  border-radius: 0.9rem;
+  padding: 1.75rem 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #f0e2d4;
+}
+
+/* Values cards */
+.about-value-card {
+  border-radius: 0.9rem;
+  padding: 1.4rem 1.3rem;
+  background-color: #ffffff;
+  border: 1px solid #f5e7d8;
+}
+
+.about-value-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Small spacing tweaks on mobile */
+@media (max-width: 575.98px) {
+  .about-hero {
+    padding-top: 3rem;
+  }
+}
+
+
+/* MANAGEMENT SYSTEM PAGE */
+
+.ms-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(
+      to right,
+      rgba(253, 188, 49, 0.08),
+      rgba(225, 90, 31, 0.03)
+    ),
+    #ffffff;
+}
+
+/* PDCA step cards */
+.ms-step-card {
+  border-radius: 0.9rem;
+  padding: 1.6rem 1.4rem 1.4rem;
+  background-color: #ffffff;
+  border: 1px solid #f0e2d4;
+}
+
+.ms-step-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.ms-step-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ms-orange);
+  margin-bottom: 0.35rem;
+}
+
+/* Lifecycle support cards */
+.ms-lifecycle-card {
+  border-radius: 0.9rem;
+  padding: 1.5rem 1.3rem;
+  background-color: #ffffff;
+  border: 1px solid #f5e7d8;
+}
+
+.ms-lifecycle-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Small tweak for mobile spacing */
+@media (max-width: 575.98px) {
+  .ms-hero {
+    padding-top: 3rem;
+  }
+}
+
+/* SERVICES PAGE */
+
+.services-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(
+      to right,
+      rgba(253, 188, 49, 0.06),
+      rgba(225, 90, 31, 0.02)
+    ),
+    #ffffff;
+}
+
+/* Service number circle */
+.service-icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(225, 90, 31, 0.08);
+  color: var(--ms-orange);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Main service cards */
+.service-full-card {
+  border-radius: 0.9rem;
+  padding: 1.6rem 1.5rem 1.4rem;
+  background-color: #ffffff;
+  border: 1px solid #f0e2d4;
+}
+
+.service-full-card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Reusable list style */
+.service-list {
+  padding-left: 1.1rem;
+}
+
+.service-list li {
+  margin-bottom: 0.2rem;
+}
+
+/* Process cards */
+.service-process-card {
+  border-radius: 0.9rem;
+  padding: 1.4rem 1.3rem;
+  background-color: #ffffff;
+  border: 1px solid #f5e7d8;
+}
+
+.service-process-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Small tweak for hero spacing on small screens */
+@media (max-width: 575.98px) {
+  .services-hero {
+    padding-top: 3rem;
+  }
+}
+
+/* CONTACT PAGE */
+
+.contact-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(
+      to right,
+      rgba(253, 188, 49, 0.06),
+      rgba(225, 90, 31, 0.01)
+    ),
+    #ffffff;
+}
+
+.contact-details-card {
+  border-radius: 0.9rem;
+  padding: 1.8rem 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #f0e2d4;
+}
+
+.contact-form-card {
+  border-radius: 0.9rem;
+  padding: 1.8rem 1.6rem;
+  background-color: #ffffff;
+  border: 1px solid #f0e2d4;
+}
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+  font-size: 0.9rem;
+}
+
+/* Hero spacing on small screens */
+@media (max-width: 575.98px) {
+  .contact-hero {
+    padding-top: 3rem;
+  }
+}
+
+
+/* Social links on contact page */
+.social-links a {
+  display: inline-block;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: rgba(225, 90, 31, 0.08);
+  color: var(--ms-orange);
+}
+
+.social-links a:hover {
+  background-color: var(--ms-orange);
+  color: #ffffff;
+}

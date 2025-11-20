@@ -5,58 +5,40 @@
   <title>Contact | Marang SHEQ Consulting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  >
+    rel="stylesheet">
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Custom styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
-  <!-- Thin top border -->
+  <!-- Top Border -->
   <div class="top-border"></div>
 
-  <!-- Header / Navbar -->
+  <!-- Navbar -->
   <header class="site-header">
     <nav class="navbar navbar-expand-lg custom-navbar">
       <div class="container">
-
         <a class="navbar-brand" href="index.html">
           <img src="images/marang-logo.png" alt="Marang SHEQ Consulting logo" class="logo-img">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-lg-end" id="mainNav">
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
           <ul class="navbar-nav main-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="management-system.html">Management System</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="management-system.html">Management System</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
           </ul>
         </div>
 
@@ -64,49 +46,49 @@
     </nav>
   </header>
 
-  <!-- Contact hero -->
-  <section class="contact-hero">
+
+  <!-- HERO -->
+  <section class="contact-hero py-5">
     <div class="container">
       <div class="row align-items-center g-4">
+
         <div class="col-lg-6">
           <p class="page-tag mb-2">Get in touch</p>
-          <h1 class="page-title mb-3">
-            Let’s discuss your SHEQ requirements.
-          </h1>
+          <h1 class="page-title mb-3">Let’s discuss your SHEQ requirements.</h1>
           <p class="lead-text mb-3">
             Share a few details about your organisation and the support you are looking for.
             We’ll respond to arrange a suitable time to talk through your needs.
           </p>
-          <p class="mb-0">
-            You can also contact us directly using the details alongside if you prefer
-            to phone or email.
-          </p>
         </div>
+
         <div class="col-lg-6">
-          <!-- Free stock photo (Pexels) -->
           <img
-            src="https://images.pexels.com/photos/8867431/pexels-photo-8867431.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Professional consultation and discussion"
-            class="img-fluid about-photo shadow-sm">
+            src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&w=1400&q=80"
+            class="img-fluid rounded shadow-sm"
+            alt="Professional consultation and discussion">
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact details + form -->
+
+  <!-- Contact Section -->
   <section class="py-5">
     <div class="container">
       <div class="row g-4">
-        <!-- Contact details / Where to find us -->
+
+        <!-- LEFT: CONTACT DETAILS -->
         <div class="col-lg-4">
-          <div class="contact-details-card h-100">
+          <div class="contact-details-card h-100 p-4 shadow-sm rounded">
+
             <h2 class="section-title mb-3">Where to find us</h2>
+
             <p class="mb-3">
-              Visit us, call or email using the details below, or use the enquiry form to send
-              us a message.
+              Contact us directly or send an enquiry using the form alongside.
             </p>
 
-            <h6 class="mb-2">Address</h6>
+            <h6 class="mb-2"><i class="fa-solid fa-location-dot text-primary me-2"></i>Address</h6>
             <p class="small mb-3">
               8455 Breedt Street<br>
               Father Gerald Martin<br>
@@ -114,60 +96,44 @@
               1754
             </p>
 
-			<ul class="list-unstyled small mb-3">
-			  <li class="mb-1"><strong>Phone:</strong> +27(0) 73 827 0304</li>
-			  <li class="mb-1"><strong>Email:</strong> support@marangsheq.co.za</li>
-			  <li class="mb-1">
-				<strong>Website:</strong>
-				<a href="https://www.marangsheq.co.za" target="_blank" rel="noopener">
-				  www.marangsheq.co.za
-				</a>
-			  </li>
-			</ul>
+            <h6 class="mb-2"><i class="fa-solid fa-phone text-primary me-2"></i>Phone</h6>
+            <p class="small mb-3">+27 (0) 73 827 0304</p>
 
-			<div class="mb-2 small">
-			  <strong>Social media:</strong>
-			</div>
-			<div class="social-links mb-3">
-			  <a href="https://www.facebook.com/marangsheq/" target="_blank" rel="noopener">
-				Facebook
-			  </a>
-			  <a href="https://x.com/Marang_SHEQ" target="_blank" rel="noopener">
-				X
-			  </a>
-			  <a href="https://za.linkedin.com/in/lefa-rampete-aba74452" target="_blank" rel="noopener">
-				LinkedIn
-			  </a>
-			  <a href="https://plus.google.com/b/1088737678269283930/1088737678269283930"
-				 target="_blank" rel="noopener">
-				Google+
-			  </a>
-			</div>
-            
+            <h6 class="mb-2"><i class="fa-solid fa-envelope text-primary me-2"></i>Email</h6>
+            <p class="small mb-3">support@marangsheq.co.za</p>
 
-            <div class="mb-2 small">
-              <strong>Map:</strong>
+            <h6 class="mb-2"><i class="fa-solid fa-globe text-primary me-2"></i>Website</h6>
+            <p class="small mb-3">
+              <a href="https://www.marangsheq.co.za" target="_blank" rel="noopener">www.marangsheq.co.za</a>
+            </p>
+
+            <h6 class="mb-2"><i class="fa-solid fa-share-nodes text-primary me-2"></i>Social Media</h6>
+            <div class="d-flex gap-3 mb-4">
+              <a href="https://www.facebook.com/marangsheq/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="https://x.com/Marang_SHEQ" target="_blank"><i class="fab fa-x-twitter fa-lg"></i></a>
+              <a href="https://za.linkedin.com/in/lefa-rampete-aba74452" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
             </div>
+
+            <h6 class="mb-2"><i class="fa-solid fa-map text-primary me-2"></i>Map</h6>
             <div class="ratio ratio-4x3">
-              <!-- Basic Google Maps embed for the address.
-                   You can replace the src below with the exact embed URL from Google Maps if you prefer. -->
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d2998.5383756692345!2d27.782555714620234!3d-26.149173868991333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d-26.149179!2d27.7847448!4m3!3m2!1d-26.1491273!2d27.7847331!5e1!3m2!1sen!2sza!4v1449054275563"
                 style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                allowfullscreen
+                loading="lazy">
               </iframe>
             </div>
           </div>
         </div>
 
-        <!-- Contact form -->
+
+        <!-- RIGHT: CONTACT FORM -->
         <div class="col-lg-8">
-          <div class="contact-form-card">
+          <div class="contact-form-card p-4 shadow-sm rounded">
+
             <h2 class="section-title mb-3">Send us an enquiry</h2>
 
-            <!-- Success / error alerts (hidden by default, shown via JS when ?status= is present) -->
+            <!-- Success/Error Alerts -->
             <div id="alert-success" class="alert alert-success small py-2 d-none">
               Thank you, your message has been sent. We will respond as soon as possible.
             </div>
@@ -176,25 +142,30 @@
             </div>
 
             <form action="contact.php" method="post" class="row g-3">
+
               <div class="col-md-6">
-                <label for="name" class="form-label small">Full name *</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <label class="form-label small">Full name *</label>
+                <input type="text" class="form-control" name="name" required>
               </div>
+
               <div class="col-md-6">
-                <label for="company" class="form-label small">Company</label>
-                <input type="text" class="form-control" id="company" name="company">
+                <label class="form-label small">Company</label>
+                <input type="text" class="form-control" name="company">
               </div>
+
               <div class="col-md-6">
-                <label for="email" class="form-label small">Email *</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label class="form-label small">Email *</label>
+                <input type="email" class="form-control" name="email" required>
               </div>
+
               <div class="col-md-6">
-                <label for="phone" class="form-label small">Phone</label>
-                <input type="tel" class="form-control" id="phone" name="phone">
+                <label class="form-label small">Phone</label>
+                <input type="tel" class="form-control" name="phone">
               </div>
+
               <div class="col-12">
-                <label for="service" class="form-label small">I need help with</label>
-                <select class="form-select" id="service" name="service">
+                <label class="form-label small">I need help with</label>
+                <select class="form-select" name="service">
                   <option value="" selected>Select an option</option>
                   <option value="audits">SHEQ audits & assessments</option>
                   <option value="systems">Management systems</option>
@@ -204,20 +175,24 @@
                   <option value="other">Other / not sure</option>
                 </select>
               </div>
+
               <div class="col-12">
-                <label for="message" class="form-label small">Message *</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                <label class="form-label small">Message *</label>
+                <textarea class="form-control" name="message" rows="5" required></textarea>
               </div>
+
               <div class="col-12">
                 <button type="submit" class="btn btn-hero-primary">
                   Submit enquiry
                 </button>
               </div>
+
               <div class="col-12">
                 <p class="small text-muted mb-0">
-                  By submitting this form you consent to us contacting you regarding your enquiry.
+                  By submitting this form, you consent to us contacting you regarding your enquiry.
                 </p>
               </div>
+
             </form>
           </div>
         </div>
@@ -226,14 +201,13 @@
     </div>
   </section>
 
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="row align-items-center gy-2">
         <div class="col-md-6">
-          <small>
-            &copy; <span id="year"></span> Marang SHEQ Consulting. All rights reserved.
-          </small>
+          <small>&copy; <span id="year"></span> Marang SHEQ Consulting. All rights reserved.</small>
         </div>
         <div class="col-md-6 text-md-end">
           <small>
@@ -247,28 +221,23 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Helper to read query params
-    function getQueryParam(name) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(name);
-    }
+    // URL query param handler
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get("status");
 
-    const status = getQueryParam('status');
-    if (status === 'ok') {
-      document.getElementById('alert-success').classList.remove('d-none');
-    } else if (status === 'error') {
-      document.getElementById('alert-error').classList.remove('d-none');
+    if (status === "ok") {
+      document.getElementById("alert-success").classList.remove("d-none");
+    }
+    if (status === "error") {
+      document.getElementById("alert-error").classList.remove("d-none");
     }
   </script>
+
 </body>
 </html>

@@ -532,3 +532,18 @@ body {
   background-color: var(--ms-orange);
   color: #ffffff;
 }
+
+.client-logo-box {
+  height: 90px;          /* control the uniform size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.client-logo-box img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.05);
+}

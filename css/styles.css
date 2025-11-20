@@ -547,3 +547,18 @@ body {
   object-fit: contain;
   filter: brightness(1.05);
 }
+
+
+.process-flow .step {
+  width: 140px;
+}
+
+.process-flow .icon-wrap {
+  font-size: 2rem;
+  color: var(--primary-color, #005bbb);
+}
+
+.process-flow .arrow {
+  font-size: 1.5rem;
+  color: #999;
+}

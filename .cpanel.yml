@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export SITE_DIR=/home/khehlacl/public_html
+    - export SITE_DIR=/home/khehlacl/public_html/marangsheq.co.za
 
     # Create the directory if missing
     - mkdir -p $SITE_DIR

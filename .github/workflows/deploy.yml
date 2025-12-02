@@ -3,7 +3,7 @@ name: 🚀 Deploy marang-sheq via FTPS
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
